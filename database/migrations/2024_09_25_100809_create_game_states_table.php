@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('game_states', function (Blueprint $table) {
             $table->id();
-            $table->json('game_state')->default(json_encode([1, 1, 1, 0, 0, 0, 2, 2, 2]));
-            $table->integer('current_color')->default(1);
+            $table->json('game_state');
+            $table->integer('current_color');
             $table->timestamps();
         });
     }
