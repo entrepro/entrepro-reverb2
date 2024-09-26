@@ -296,9 +296,9 @@ export default function Home() {
                             </div>
                             <div className="divider"></div>
                             {isLoading ? (
-                                <div className="grid grid-cols-3 gap-20 aspect-square bg-slate-500 p-5 rounded-xl mx-auto h-[50vh]"></div>
+                                <div className="grid grid-cols-3 gap-10 aspect-square bg-slate-500 p-5 rounded-xl mx-auto h-[50vh]"></div>
                             ) : (
-                                <div className="grid grid-cols-3 gap-20 aspect-square bg-slate-500 p-5 rounded-xl mx-auto h-[50vh]">
+                                <div className="grid grid-cols-3 gap-10 aspect-square bg-slate-500 p-5 rounded-xl mx-auto h-[50vh]">
                                     {userColor == "white" ? (
                                         <>
                                             {boxes.game_state
@@ -307,7 +307,7 @@ export default function Home() {
                                                 .map((box, index) => (
                                                     <div
                                                         key={index}
-                                                        className={`p-5 w-full h-full rounded-xl flex items-center justify-center transition duration-200 ease-in ${
+                                                        className={`p-2 w-full h-full rounded-xl flex items-center justify-center transition duration-200 ease-in ${
                                                             draggedPieceIndex !==
                                                                 null &&
                                                             isLegalMove(
